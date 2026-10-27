@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      The privacy guarantee lives here. connect-src 'none' forbids every fetch,
+      XHR, WebSocket and beacon. Everything else may only load from this origin.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'none'; connect-src 'none'; manifest-src 'none'; media-src 'none'; worker-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Krypto-Steuer lokal: crypto tax prototype for Germany that runs entirely in your browser." />
+    <title>Krypto-Steuer lokal</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23e7efe9'/%3E%3Crect x='5' y='9' width='22' height='14' fill='%23fff' stroke='%2318241d'/%3E%3Cpath d='M12 9v14M19 9v14' stroke='%23b9c8be'/%3E%3Cpath d='M5 23h22' stroke='%231e7a4c' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Diese Seite braucht JavaScript. Es läuft nur in deinem Browser und sendet nichts.</noscript>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

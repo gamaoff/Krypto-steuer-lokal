@@ -1,0 +1,30 @@
+{
+  "name": "krypto-steuer-lokal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first crypto tax prototype for private investors in Germany. Runs entirely in the browser, sends no data anywhere.",
+  "author": "gamaoff",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

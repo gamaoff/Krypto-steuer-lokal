@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+# Never commit real transaction exports. Use the synthetic sample in sample/.
+*.private.csv
+private/
